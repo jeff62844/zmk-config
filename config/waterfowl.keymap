@@ -60,7 +60,7 @@
 &none    &none   &none    &none    &none      &none  &none  &none  &none      &none
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(TAB) LS(LC(TAB))>;
+            sensor-bindings = <&inc_dec_kp LC(LS(TAB)) LC(TAB)>;
         };
 
         MOUSE {
