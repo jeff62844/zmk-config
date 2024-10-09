@@ -36,12 +36,11 @@
 &kt LSHIFT    &kp LCTRL  &kp BSPC  &lt 3 SPACE  &to 5      &tog 4  &mt LALT DEL  &lt 2 ENTER  &lt 1 TAB   &kt LCTRL
             >;
 
-            sensor-bindings = <
-                &inc_dec_kp PAGE_DOWN PAGE_UP
-                &inc_dec_kp C_VOL_DN C_VOL_UP
-                &inc_dec_kp DOWN UP
-                &inc_dec_kp LEFT RIGHT
-            >;
+            sensor-bindings =
+                <&inc_dec_kp PAGE_UP PAGE_DOWN>,
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp DOWN UP>,
+                <&inc_dec_kp LEFT RIGHT>;
         };
 
         NAV {
@@ -79,10 +78,10 @@
 
         ADJ {
             bindings = <
-&none  &none  &none  &none  &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&none  &none  &none  &none  &none    &none         &none         &none         &none         &none
-&none  &none  &none  &none  &none    &bt BT_CLR    &none         &bootloader   &none         &bt BT_CLR_ALL
-&none  &none  &none  &none  &none    &tog 4        &none         &none         &none         &none
+&none  &none  &none        &none  &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&none  &none  &none        &none  &none    &none         &none         &none         &none         &none
+&none  &none  &bootloader  &none  &none    &bt BT_CLR    &none         &bootloader   &none         &bt BT_CLR_ALL
+&none  &none  &none        &none  &none    &tog 4        &none         &none         &none         &none
             >;
         };
 
