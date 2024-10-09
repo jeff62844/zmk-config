@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
 
 / {
@@ -32,7 +33,7 @@
 &kp Q         &kp W      &kp E     &kp R        &lt 5 T    &kp Y   &kp U         &kp I        &kp O       &kp P
 &kp A         &kp S      &kp D     &kp F        &kp G      &kp H   &kp J         &kp K        &mt LALT L  &mt LGUI SEMI
 &mt LSHIFT Z  &kp X      &kp C     &kp V        &lt 6 B    &kp N   &kp M         &kp COMMA    &kp DOT     &mt RSHIFT SLASH
-&kp N1        &kp LCTRL  &kp BSPC  &lt 3 SPACE  &to 5      &tog 4  &mt LALT DEL  &lt 2 ENTER  &lt 1 TAB   &kp N4
+&kt LSHIFT    &kp LCTRL  &kp BSPC  &lt 3 SPACE  &to 5      &tog 4  &mt LALT DEL  &lt 2 ENTER  &lt 1 TAB   &kt LCTRL
             >;
 
             sensor-bindings = <
