@@ -67,13 +67,13 @@
             bindings = <
 &kp LCTRL  &kp LC(W)  &none     &kp LC(R)  &kp LC(T)    &none  &none            &none  &none  &none
 &kp LALT   &mkp MB3   &mkp MB2  &mkp MB1   &none        &none  &kp PRINTSCREEN  &none  &none  &none
-&kp LSHFT  &none      &none     &none      &none        &none  &none            &none  &none  &none
+&kp LSHFT  &none      &none     &none      &kp TAB      &none  &none            &none  &none  &none
 &none      &none      &none     &none      &to 4        &none  &none            &none  &none  &none
             >;
 
             sensor-bindings =
                 <&inc_dec_kp LC(LS(TAB)) LC(TAB)>,
-                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+                <&inc_dec_kp LC(C_AC_SCROLL_UP) C_AC_SCROLL_DOWN>;
         };
 
         ADJ {
