@@ -30,10 +30,10 @@
  */
 
             bindings = <
-&kp Q         &kp W      &kp E     &kp R        &lt 5 T    &kp Y   &kp U         &kp I        &kp O      &kp P
-&kp A         &kp S      &kp D     &kp F        &kp G      &kp H   &kp J         &kp K        &kp L      &kp SEMICOLON
-&mt LSHIFT Z  &kp X      &kp C     &kp V        &lt 6 B    &kp N   &kp M         &kp COMMA    &kp DOT    &mt RSHIFT SLASH
-&kt LSHIFT    &kp LCTRL  &kp BSPC  &lt 3 SPACE  &to 5      &tog 4  &mt LALT DEL  &lt 2 ENTER  &lt 1 TAB  &kt LCTRL
+&kp Q         &kp W      &kp E     &kp R        &lt 5 T    &kp Y  &kp U         &kp I        &kp O      &kp P
+&kp A         &kp S      &kp D     &kp F        &kp G      &kp H  &kp J         &kp K        &kp L      &kp SEMICOLON
+&mt LSHIFT Z  &kp X      &kp C     &kp V        &lt 6 B    &kp N  &kp M         &kp COMMA    &kp DOT    &mt RSHIFT SLASH
+&kt LSHIFT    &kp LCTRL  &kp BSPC  &lt 3 SPACE  &to 5      &to 4  &mt LALT DEL  &lt 2 ENTER  &lt 1 TAB  &kt LCTRL
             >;
 
             sensor-bindings =
@@ -68,7 +68,7 @@
 &kp LCTRL  &kp LC(W)  &none     &kp LC(R)  &kp LC(T)    &none  &none            &none  &none  &none
 &kp LALT   &mkp MB3   &mkp MB2  &mkp MB1   &none        &none  &kp PRINTSCREEN  &none  &none  &none
 &kp LSHFT  &none      &none     &none      &none        &none  &none            &none  &none  &none
-&none      &none      &none     &none      &none        &none  &none            &none  &none  &none
+&none      &none      &none     &none      &to 4        &none  &none            &none  &none  &none
             >;
 
             sensor-bindings =
@@ -81,7 +81,7 @@
 &none  &none  &none        &none  &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &none  &none  &none        &none  &none    &none         &none         &none         &none         &none
 &none  &none  &bootloader  &none  &none    &bt BT_CLR    &none         &bootloader   &none         &bt BT_CLR_ALL
-&none  &none  &none        &none  &none    &tog 4        &none         &none         &none         &none
+&none  &none  &none        &none  &to 3    &to 0         &none         &none         &none         &none
             >;
         };
 
