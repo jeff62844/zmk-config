@@ -75,7 +75,7 @@
                 <&inc_dec_kp LC(LS(TAB)) LC(TAB)>,
                 <&inc_dec_kp LC(LS(TAB)) LC(TAB),
                 <&inc_dec_kp LC(LS(TAB)) LC(TAB)>,
-                <&inc_dec_kp LS(TAB)) TAB>;
+                <&inc_dec_kp LS(TAB) TAB>;
         };
 
         ADJ {
