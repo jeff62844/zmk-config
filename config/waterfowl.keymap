@@ -65,10 +65,10 @@
 
         MOUSE {
             bindings = <
-&kp LCTRL  &none     &none     &none     &none    &none  &none            &none  &none  &none
-&kp LALT   &mkp MB3  &mkp MB2  &mkp MB1  &none    &none  &kp PRINTSCREEN  &none  &none  &none
-&kp LSHFT  &none     &none     &none     &none    &none  &none            &none  &none  &none
-&none      &none     &none     &none     &none    &none  &none            &none  &none  &none
+&kp LCTRL  &kp LC(W)  &none     &kp LC(R)  &kp LC(T)    &none  &none            &none  &none  &none
+&kp LALT   &mkp MB3   &mkp MB2  &mkp MB1   &none        &none  &kp PRINTSCREEN  &none  &none  &none
+&kp LSHFT  &none      &none     &none      &none        &none  &none            &none  &none  &none
+&none      &none      &none     &none      &none        &none  &none            &none  &none  &none
             >;
 
             sensor-bindings =
