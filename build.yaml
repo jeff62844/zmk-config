@@ -17,17 +17,13 @@
 #     artifact-name: corne_left_with_logging
 # 
 ---
-
----
 include:
-  - board: nice_nano_v2
-#    shield: waterfowl_left nice_view_adapter nice_view_gem #updated entry
+  - board: nice_nano_v2y
     shield: waterfowl_left nice_view_adapter
   - board: nice_nano_v2
     shield: waterfowl_right nice_view_adapter
-#    shield: waterfowl_left nice_view_adapter nice_view_gem #updated entry
-#  - board: nice_nano_v2
-#    shield: settings_reset
+  - board: nice_nano_v2
+    shield: settings_reset
 #include:
 #  - board: nice_nano_v2
 #    shield: waterfowl_left nice_view_adapter nice_view
