@@ -18,7 +18,7 @@
 # 
 ---
 include:
-  - board: nice_nano_v2y
+  - board: nice_nano_v2
     shield: waterfowl_left nice_view_adapter
   - board: nice_nano_v2
     shield: waterfowl_right nice_view_adapter
