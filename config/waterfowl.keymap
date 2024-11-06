@@ -130,10 +130,10 @@
 
         GAME {
             bindings = <
-&kp Q  &kp W  &kp E  &kp R  &kp T    &kp Y  &kp U  &kp I      &kp O    &kp P
-&kp A  &kp S  &kp D  &kp F  &kp G    &kp H  &kp J  &kp K      &kp L    &kp SEMI
-&kp Z  &kp X  &kp C  &kp V  &kp B    &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH
-&GToB  &none  &none  &none  &none    &none  &none  &kp RET    &none    &none
+&kp Q      &none     &none     &none      &kp W              &kp F2  &none   &none  &none   &kp F4
+&kp ENTER  &kp X     &kp UP    &kp Z      &kp RIGHT_SHIFT    &none   &kp F6  &none  &kp F7  &none
+&none      &kp LEFT  &kp DOWN  &kp RIGHT  &none              &kp P   &kp K   &none  &none   &kp SPACE
+&GToB      &none     &none     &none      &none              &none   &none   &kp Y  &none   &none
             >;
         };
     };
