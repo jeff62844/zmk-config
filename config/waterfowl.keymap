@@ -20,7 +20,7 @@
                 <&macro_wait_time 20>,
                 <&bt BT_SEL 0>,
                 <&macro_wait_time 500>,
-                <&bt BT_DISC 1 &to 0>;
+                <&to 0>;
 
             label = "NEW_MACRO";
         };
