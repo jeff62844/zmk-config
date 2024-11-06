@@ -11,6 +11,29 @@
 #include <dt-bindings/zmk/mouse.h>
 
 / {
+    macros {
+        GToB: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LG(L)>,
+                <&macro_wait_time 20>,
+                <&bt BT_SEL 0>,
+                <&macro_wait_time 500>,
+                <&to 0>;
+
+            label = "NEW_MACRO";
+        };
+
+        BToG: BTOG {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 1>, <&macro_wait_time 20>, <&to 7>;
+
+            label = "BTOG";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -92,7 +115,7 @@
 &kp LS(LA(LC(LEFT_GUI)))  &none  &none        &none  &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &none                     &none  &none        &none  &none    &none         &none         &none         &none         &none
 &none                     &none  &bootloader  &none  &none    &bt BT_CLR    &none         &bootloader   &none         &bt BT_CLR_ALL
-&none                     &none  &none        &none  &to 3    &to 0         &none         &none         &none         &none
+&BToG                     &none  &none        &none  &to 3    &to 0         &none         &none         &none         &none
             >;
         };
 
@@ -102,6 +125,15 @@
 &none      &none      &none      &none      &none        &none  &kp LG(LEFT_ARROW)  &kp LG(UP)    &kp LG(RIGHT)  &none
 &none      &none      &none      &none      &none        &none  &none               &kp LG(DOWN)  &none          &none
 &none      &none      &none      &none      &none        &none  &none               &none         &none          &none
+            >;
+        };
+
+        GAME {
+            bindings = <
+&kp Q  &kp W  &kp E  &kp R  &kp T    &kp Y  &kp U  &kp I      &kp O    &kp P
+&kp A  &kp S  &kp D  &kp F  &kp G    &kp H  &kp J  &kp K      &kp L    &kp SEMI
+&kp Z  &kp X  &kp C  &kp V  &kp B    &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH
+&GToB  &none  &none  &none  &none    &none  &none  &kp RET    &none    &none
             >;
         };
     };
